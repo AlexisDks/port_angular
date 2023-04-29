@@ -2170,3 +2170,7 @@ body {
 .rk-light-color {
   color: #787878;
 }
+
+.animate__animated {
+  animation-duration: 0.6s !important;
+}
