@@ -52,10 +52,10 @@
   >
     <a
       *ngFor="let producto of productosService.productos"
-      routerLink="/item"
+      [routerLink]="['/item', producto.cod]"
       class="rk-item ae-masonry__item"
     >
-      <img src="assets/img/{{ producto.url }}.jpg" alt="" />
+      <img src="assets/img/productos/{{ producto.url }}.jpg" alt=""/>
       <div class="item-meta">
         <h2>{{ producto.titulo }}</h2>
         <p>{{ producto.categoria }}</p>
