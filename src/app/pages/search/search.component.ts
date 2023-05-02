@@ -15,8 +15,6 @@ export class SearchComponent {
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
-      console.log(params['termino']);
-
       this.productoService.buscarProducto(params['termino']);
     });
   }
